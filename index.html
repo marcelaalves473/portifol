@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- Incluindo Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Estilo personalizado -->
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        .navbar {
+            background-color: #800000;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .jumbotron {
+            background-image: url();
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .footer {
+            background-color: #800000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1{
+            color:black;
+        }
+        p{
+            color:black;
+            text-align: justify;
+        }
+        #paragrafo{
+
+            text-align: center;
+
+        }
+        #paragrafo1{
+
+            text-align: center;
+        }
+        img{
+            
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Barra de Navegação -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Meu Portfólio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Página Inicial -->
+<div id="home" class="jumbotron">
+    <h1>Bem-vindo ao Meu Portfólio</h1>
+    <br><br>
+    <p id = "paragrafo" >Este é um exemplo de um site de portfólio simples usando HTML, CSS e Bootstrap.</p>
+</div>
+
+<!-- Sobre -->
+<div id="about" class="section">
+    <div class="container">
+        <h2>Sobre Mim</h2>
+        <br><br>
+        <img src="marcela1.jpg" alt="foto da autora do portfólio">
+        <br><br><br>
+        <p>Estudante do Curso de Programaçao Web, na escola da Prodabel. Tenho técnico em Segurança do trabalho 
+           me chamo Marcela Alves, tenho 33 anos estou no comercio a 15 anos e em busca de uma nova oportunidade em Ciência da computação</p>
+    </div>
+</div>
+
+<!-- Contato -->
+<div id="contact" class="section">
+    <div class="container">
+        <h2>Contato</h2>
+        <p>Você pode entrar em contato pelo meu email:martins473marcela@gmail.com</p>
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="footer">
+    <div class="container">
+        <p id = "paragrafo1">&copy; 2023 Meu Portfólio</p>
+    </div>
+</footer>
+
+<!-- Scripts do Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
