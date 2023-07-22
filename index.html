@@ -1,129 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <!-- Incluindo Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Estilo personalizado -->
+<html lang="pt-br">
+    <meta charset="utf-8">
+    <meta name="vieewport" content="width=device-widh,initial-scale-1.0">
+    <title>Slider com HTML E CSS</TITLE>
     <style>
-        body {
-            padding-top: 50px;
-        }
+       * {
+            padding:0 ;
+            margin: 0;
+     }
 
-        .navbar {
-            background-color: #800000;
-        }
+     header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 28px;
+        background-color: blueviolet;
+        color: antiquewhite;
+        font-family: Cambria, Arial;
+     }
 
-        .navbar-brand, .navbar-nav .nav-link {
-            color: #fff;
-        }
+     section {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+     }
 
-        .jumbotron {
-            background-image: url();
-            background-size: cover;
-            color: #fff;
-            text-align: center;
-            padding: 100px;
-        }
+     form {
+        font-family: Arial, ;
+     }
+    
+     form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
 
-        .section {
-            padding: 50px 0;
-        }
+     }
 
-        .footer {
-            background-color: #800000;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        h1{
-            color:black;
-        }
-        p{
-            color:black;
-            text-align: justify;
-        }
-        #paragrafo{
+     form input, form textarea {
+        outline: unset;
+        padding: 20px;
+        min-width: 300px;
+        border: 1px solid cornflowerblue;
+        border-radius: 20px;
+     }
+     
+     form input :focus, textarea :focus {
+        background-color: white;
 
-            text-align: center;
 
-        }
-        #paragrafo1{
+     }
 
-            text-align: center;
-        }
-        img{
-            
-            width: 300px;
-        }
-    </style>
+     form input[type-sutmit] {
+        background-color: cornflowerblue;
+        color: white;
+        cursor: pointer;
+     }
+
+     form label{
+        margin-left: 10px;
+     }
+     </style>
+
 </head>
 <body>
+    <header>
+        <h1>Bem Vindo! a meu Formulario de contato</h1>
 
-<!-- Barra de Navegação -->
-<nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Meu Portfólio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">Página Inicial</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contato</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<body>
+    <header>
+        <section>
+            <form>
+                <div>
+                    <label for="name"></label>
+                    <input type="text" placeholder="digite seu nome" name="nome" nome required>
+                </div>
+                <div>
+                    <label>telefone</label>
+                    <input type="text" placeholder="digite seu telefone" name="telefone">
+                </div>
+                <div>
 
-<!-- Página Inicial -->
-<div id="home" class="jumbotron">
-    <h1>Bem-vindo ao Meu Portfólio</h1>
-    <br><br>
-    <p id = "paragrafo" >Este é um exemplo de um site de portfólio simples usando HTML, CSS e Bootstrap.</p>
-</div>
+                    <label>mensagem</label>
+                    <input type="text" placeholder="digite seu text" name="text">
+                  </div>
+                  
+                  <input type="submit" value="enviar"/>
 
-<!-- Sobre -->
-<div id="about" class="section">
-    <div class="container">
-        <h2>Sobre Mim</h2>
-        <br><br>
-        <img src="marcela1.jpg" alt="foto da autora do portfólio">
-        <br><br><br>
-        <p>Estudante do Curso de Programaçao Web, na escola da Prodabel. Tenho técnico em Segurança do trabalho 
-           me chamo Marcela Alves, tenho 33 anos estou no comercio a 15 anos e em busca de uma nova oportunidade em Ciência da computação</p>
-    </div>
-</div>
+                  <div class="slider">
 
-<!-- Contato -->
-<div id="contact" class="section">
-    <div class="container">
-        <h2>Contato</h2>
-        <p>Você pode entrar em contato pelo meu email:martins473marcela@gmail.com</p>
-    </div>
-</div>
+                    <div class="slider">
 
-<!-- Rodapé -->
-<footer class="footer">
-    <div class="container">
-        <p id = "paragrafo1">&copy; 2023 Meu Portfólio</p>
-    </div>
-</footer>
-
-<!-- Scripts do Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+                    </div>
+                </form>
+        </section>
+    </header>
 </body>
 </html>
+
+    
+
+    
+    
+
+
+
+
